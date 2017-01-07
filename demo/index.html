@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CardMove | Animation Card CSS</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="It's a plugin developed with JavaScript, that allows to dynamically animate angle and perspective of card with mouseover.">
+
+  <meta property="og:url" content="http://thompsonemerson.github.io/cardmove/">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="CardMove | Animation Card CSS">
+  <meta property="og:description" content="It's a plugin developed with JavaScript, that allows to dynamically animate angle and perspective of card with mouseover.">
+
+  <meta property="article:published_time" content="2017-01-01T01:00:00Z">
+	<meta property="article:author" content="Emerson Thompson">
+	<meta property="article:section" content="website">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:domain" content="CardMove | Animation Card CSS">
+	<meta name="twitter:url" content="http://thompsonemerson.github.io/cardmove">
+	<meta name="twitter:site" content="http://thompsonemerson.github.io/cardmove">
+	<meta name="twitter:creator" content="Emerson Thompson">
+	<meta name="twitter:title" content="CardMove | Animation Card CSS">
+	<meta name="twitter:description" content="It's a plugin developed with JavaScript, that allows to dynamically animate angle and perspective of card with mouseover.">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:700,400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main class="wrapper">
+		<section class="container main">
+			<div class="block">
+				<h5 class="title">Examples</h5>
+				<small>Images by http://lorempixel.com</small><br><br>
+				<div class="row">
+					<div class="column">
+						<div class="item">
+							<div class="card-item">
+							  <div class="card-content">
+							    <img src="http://lorempixel.com/220/250/" alt="">
+							  </div>
+							</div>
+						</div>
+						<small class="text-center">Item 1</small>
+					</div>
+					<div class="column">
+						<div class="item">
+              <div class="card-item" data-card-angle="100">
+							  <div class="card-content">
+							    <img src="http://lorempixel.com/220/250/" alt="">
+							  </div>
+							</div>
+						</div>
+						<small class="text-center">Item 2</small>
+					</div>
+					<div class="column">
+						<div class="item">
+              <div class="card-item" data-card-horizontal="false">
+							  <div class="card-content">
+							    <img src="http://lorempixel.com/220/250/" alt="">
+							  </div>
+							</div>
+						</div>
+						<small class="text-center">Item 3</small>
+					</div>
+				</div>
+				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- Item 1 | Default --&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-item"</span><span class="pln"></span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-content"</span><span class="pln"></span><span class="tag">&gt;</span>
+   ...
+
+<span class="com">&lt;!-- Image 2 | Angle value "100" --&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-item"</span><span class="pln"> </span><span class="atn">data-card-angle</span><span class="pun">=</span><span class="atv">"100"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-content"</span><span class="pln"></span><span class="tag">&gt;</span>
+   ...
+
+<span class="com">&lt;!-- Image 3 | Horizontal value "false" --&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-item"</span><span class="pln"> </span><span class="atn">data-card-horizontal</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-content"</span><span class="pln"></span><span class="tag">&gt;</span>
+   ...</code></pre>
+			</div>
+
+			<div class="block">
+				<h5 class="title">How to use</h5>
+				<table>
+					<thead>
+						<tr>
+              <th>Property</th>
+							<th>Type</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+              <td>angle</td>
+							<td>number</td>
+							<td>30</td>
+							<td>Regulates the angle of the animation card.</td>
+						</tr>
+						<tr>
+              <td>perspective</td>
+							<td>number</td>
+							<td>300</td>
+							<td>Regulates the perspective of the animation card.</td>
+						</tr>
+						<tr>
+              <td>horizontal</td>
+							<td>boolean</td>
+							<td>true</td>
+							<td>Enables or disables horizontal animation.</td>
+						</tr>
+						<tr>
+							<td>vertical</td>
+              <td>boolean</td>
+							<td>true</td>
+							<td>Enables or disables vertical animation</td>
+						</tr>
+						<tr>
+							<td>speed</td>
+              <td>number</td>
+							<td>500</td>
+							<td>Sets an animation speed in milliseconds</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="row">
+					<div class="column">
+				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- HTML Element --&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span>
+  <span class="atn">class</span><span class="pun">=</span><span class="atv">"card-item"</span><span class="pln"> </span>
+  <span class="atn">data-card-angle</span><span class="pun">=</span><span class="atv">"[value]"</span>
+  <span class="atn">data-card-perspective</span><span class="pun">=</span><span class="atv">"[value]"</span>
+  <span class="atn">data-card-horizontal</span><span class="pun">=</span><span class="atv">"[value]"</span>
+  <span class="atn">data-card-vertical</span><span class="pun">=</span><span class="atv">"[value]"</span>
+  <span class="atn">data-card-speed</span><span class="pun">=</span><span class="atv">"[value]"</span><span class="tag">&gt;</span>
+
+  <span class="tag">&lt;div <span class="atn">class</span><span class="pun">=</span><span class="atv">"card-content"</span>&gt;
+  ...</span></code></pre>
+					</div>
+					<div class="column">
+				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- JavaScript --&gt;</span><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"></span><span class="tag">&gt;</span><span class="pln"></span>
+  <span class="atn">new </span><span class="tag">CardMove(<span class="atv">'.card-item'</span>, {
+     angle: <span class="atv">'[value]'</span>,
+     perspective: <span class="atv">'[value]'</span>,
+     horizontal: <span class="atv">'[value]'</span>,
+     vertical: <span class="atv">'[value]'</span>,
+     speed: <span class="atv">'[value]'</span>
+  });</span>
+<span class="tag">&lt;/script&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="../dist/cardmove.js"></script>
+	<script>
+		new CardMove('.card-item');
+	</script>
+</body>
+</html>

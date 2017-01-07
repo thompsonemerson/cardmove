@@ -1,0 +1,41 @@
+/* Reset
+/ ============================== */
+html,
+body {
+ 	font-family: "Lato", sans-serif;
+	background: #FFFFFF;
+}
+pre,
+pre.prettyprint {
+	border: 0 !important;
+	border-left: .3rem solid #2196F3 !important;
+	color: #655d5d;
+}
+.code-content .com {
+	color: rgba(44, 62, 80, 0.4);
+}
+
+.container {
+	max-width: 800px;
+}
+
+
+/* Main
+/ ============================== */
+.main .block {
+	margin: 80px 0;
+}
+	.main .block .title {
+		margin-bottom: 15px;
+		line-height: 1;
+		font-weight: 400;
+	}
+	.main .block p {
+		margin-bottom: 10px;
+		line-height: 1;
+	}
+
+.main .text-center {
+	display: block;
+	text-align: center;
+}
