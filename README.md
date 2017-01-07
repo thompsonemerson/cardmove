@@ -104,7 +104,8 @@ Now says it is not easy?! ;)
 
 ## Examples
 
->  Images by [lorempixel](http://lorempixel.com).
+> Check out a [demo on codepen](http://codepen.io/thompsonemerson/pen/aBxVma) <br>
+Images by [lorempixel](http://lorempixel.com).
 
 ![GIFs <3](demo.gif)
 

@@ -2,7 +2,7 @@
 
 Package.describe({
   name: "thompsonemerson:cardmove",
-  summary: "It's a plugin developed with JavaScript, that allows to dynamically animate angle and perspective of card with mouseover.",
+  summary: "It's a plugin that allows to dynamically animate angle and perspective of card with mouseover.",
   version: "1.0.0",
   git: "https://github.com/thompsonemerson/cardmove"
 });
