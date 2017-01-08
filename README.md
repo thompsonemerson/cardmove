@@ -32,6 +32,12 @@ bower
 $ bower install cardmove --save
 ```
 
+yarn
+
+```bash
+$ yarn add cardmove
+```
+
 If you prefer you can just [download a ZIP](https://github.com/thompsonemerson/cardmove/archive/master.zip) file.
 
 
