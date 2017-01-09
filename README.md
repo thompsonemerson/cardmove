@@ -6,7 +6,7 @@
 [![Bower version](https://badge.fury.io/bo/cardmove.svg)](https://badge.fury.io/bo/cardmove)
 [![npm version](https://badge.fury.io/js/cardmove.svg)](http://badge.fury.io/js/cardmove)
 
-> It's a plugin developed with JavaScript, that allows to dynamically animate angle and perspective of card with mouseover.
+> CardMove is a plugin developed with JavaScript that allows you to dynamically animate angles and perspectives of cards on mouseover.
 
 ## Table of Contents
 
@@ -20,19 +20,19 @@
 
 ## Install
 
-Get with npm
+NPM:
 
 ```bash
 $ npm install cardmove --save
 ```
 
-bower
+Bower:
 
 ```bash
 $ bower install cardmove --save
 ```
 
-yarn
+Yarn:
 
 ```bash
 $ yarn add cardmove
@@ -43,14 +43,14 @@ If you prefer you can just [download a ZIP](https://github.com/thompsonemerson/c
 
 ## Setup
 
-First, include the script located on the `dist` folder.
+First, include CardMove using the script located on the `dist` folder.
 
 ```html
 <!-- CardMove JS minified -->
 <script src="dist/cardmove.min.js"></script>
 ```
 
-Now need to prepare our(s) card(s) and show to the CardMove.
+Now we need to prepare our(s) card(s) markup for CardMove, like so:
 ```html
 <!-- Item -->
 <div class="card-item">
@@ -65,16 +65,15 @@ Now need to prepare our(s) card(s) and show to the CardMove.
 </script>
 ```
 
-Ready, prepared environment, now is hour of our plugin take action and prepare all remaining process. <br>
-Now says it is not easy?! ;)
+We're all set! CardMove is already working under the hood, and your card should be animated. Wasn't that easy?
 
 
 ## How to Use
 
 | Property      | Type    | Default  | Description                                      |
 | :------------ | :-----: | :-------:| :----------------------------------------------- |
-| angle         | number  | 30       | Regulates the angle of the animation card.       |
-| perspective   | number  | 300      | Regulates the perspective of the animation card. |
+| angle         | number  | 30       | Controls card's animation angle.                 |
+| perspective   | number  | 300      | Controls card's perspective.                     |
 | horizontal    | boolean | true     | Enables or disables horizontal animation.        |
 | vertical      | boolean | true     | Enables or disables vertical animation.          |
 | speed         | number  | 500      | Sets an animation speed in milliseconds.         |
@@ -105,7 +104,7 @@ Now says it is not easy?! ;)
    });
 </script>
 
-<!-- Thus it is applied universally -->
+<!-- This is applied globally -->
 ```
 
 ## Examples
@@ -147,7 +146,7 @@ Images by [lorempixel](http://lorempixel.com).
 
 ## Contributing
 
-Help improve these docs. Open an [issue](https://github.com/thompsonemerson/cardmove/issues/new) or submit a pull request.
+You can help improve these docs. Open an [issue](https://github.com/thompsonemerson/cardmove/issues/new) or submit a pull request.
 
 1. Navigate to the main page of the repository
 1. [Fork it!](https://github.com/thompsonemerson/cardmove#fork-destination-box)
