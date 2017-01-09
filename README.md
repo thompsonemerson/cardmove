@@ -55,11 +55,11 @@ Now we need to prepare our(s) card(s) markup for CardMove, like so:
 <!-- Item -->
 <div class="card-item">
    <div class="card-content">
-     <!-- Content of your item here -->
+     <!-- Content of your item goes here -->
    </div>
 </div>
 
-<!-- Starting the CardMove -->
+<!-- Starting CardMove -->
 <script>
   new CardMove('.card-item');
 </script>
