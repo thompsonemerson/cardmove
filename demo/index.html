@@ -166,7 +166,15 @@
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 	<script src="../dist/cardmove.js"></script>
 	<script>
-		new CardMove('.card-item');
+		function isMobile(){
+            return /Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
+		}
+
+		if (!isMobile) {
+		    new CardMove('.card-item');
+        } else {
+		   document.write("Plugin not available for mobile devices");
+        }
 	</script>
 </body>
 </html>
